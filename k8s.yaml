@@ -14,8 +14,8 @@ spec:
     spec:
       restartPolicy: Always
       containers:
-        - name: aaaaaaa
-          image: elecv2/lev2
+        - name: v2kuuuuuuuuuuu
+          #image: aa/lev2
           ports:
             - containerPort: 8251
             
@@ -23,13 +23,13 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: aaaa
+  name: aaa
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "aaaa"
+  - name: "aaa"
     port: 8251
   selector:
     name: aa
