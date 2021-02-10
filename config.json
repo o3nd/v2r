@@ -1,0 +1,40 @@
+{
+	"inbounds": [{
+		"port": "8251",
+		"protocol": "vmess",
+		"settings": {
+			"clients": [ {"id": "691522a2-bad9-4a74-b725-757c5e2ed0d3",	"alterId": 16} ]
+		},
+		"streamSettings": {
+			"network": "ws",
+			"security": "auto",
+			"wsSettings": {
+				"path": "/aa"
+			}
+		}
+	},{
+	   "port": 443,
+       "protocol": "vless",
+       "settings": {
+            "clients": [
+                    {
+                        "id": "691522a2-bad9-4a74-b725-757c5e2ed0d3",
+                        "level": 0,
+                        "email": ""
+                    }
+                ],
+                "decryption": "none"
+          },
+          "streamSettings": {
+                "network": "tcp",
+                "security": "auto"
+          }
+	}],
+	"outbound": {
+		"protocol": "freedom",
+		"settings": {}
+	},
+	"dns": {
+		"servers": [ "176.103.130.130", "8.8.8.8", "1.1.1.1", "114.114.114.114"]
+	}
+}

@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aa
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: aa
+  template:
+    metadata:
+      labels:
+        name: aa
+    spec:
+      restartPolicy: aa
+      containers:
+        - name: aaaaaaa
+          image: aa/lev2
+          ports:
+            - containerPort: 8251
+            
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: aaaa
+  annotations:
+    dev.okteto.com/auto-ingress: "true"
+spec:
+  type: ClusterIP  
+  ports:
+  - name: "aaaa"
+    port: 8251
+  selector:
+    name: aa
