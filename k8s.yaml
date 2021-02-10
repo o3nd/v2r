@@ -15,7 +15,7 @@ spec:
       restartPolicy: Always
       containers:
         - name: aaaaaaa
-          image: aa/lev2
+          image: elecv2/lev2
           ports:
             - containerPort: 8251
             
