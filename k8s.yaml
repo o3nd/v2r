@@ -12,7 +12,7 @@ spec:
       labels:
         name: aa
     spec:
-      restartPolicy: aa
+      restartPolicy: Always
       containers:
         - name: aaaaaaa
           image: aa/lev2
